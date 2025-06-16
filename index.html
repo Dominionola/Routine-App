@@ -42,14 +42,17 @@
       </div>
       <ul id="taskList" class="mt-4 space-y-2 rounded-lg">
         <li class="flex items-center gap-4">
-          <input
+          <!-- <input
             type="checkbox"
-            class="my-auto appearance-none w-6 h-6 bg-white border border-gray-300 rounded-full checked:bg-green-500 checked:border-transparent focus:outline-none"
+            
+            onclick="checkTask(this)"
+            class="my-auto appearance-none w-6 h-6 bg-white border border-gray-300 rounded-full checked:bg-green-500 checked:border-transparent focus:outline-none cursor-pointer"
           />
           Task 1
-          <i class="ph ph-trash hover:text-red-500 cursor-pointer text-xl"></i>
+          <i onclick="deleteTask(this)" class="ph ph-trash hover:text-red-500 cursor-pointer text-2xl"></i> -->
         </li>
       </ul>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

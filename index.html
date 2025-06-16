@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body style="font-family: 'Be Vietnam Pro', sans-serif">
+    <div class="container mx-auto h-screen pt-6 px-4">
+      <h2 class="font-bold text-3xl">To-Do List</h2>
+      <div
+        class="flex bg-gray-100 rounded-lg p-4 mt-4 align-items-center gap-4"
+      >
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Add your Task"
+          class="flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          onclick="addTask()"
+          class="px-4 py-2 bg-black text-white rounded-lg cursor-pointer"
+        >
+          Add
+        </button>
+      </div>
+      <ul id="taskList" class="mt-4 space-y-2 rounded-lg">
+        <li class="flex items-center gap-4">
+          <input
+            type="checkbox"
+            class="my-auto appearance-none w-6 h-6 bg-white border border-gray-300 rounded-full checked:bg-green-500 checked:border-transparent focus:outline-none"
+          />
+          Task 1
+          <i class="ph ph-trash hover:text-red-500 cursor-pointer text-xl"></i>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
